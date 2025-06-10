@@ -1,10 +1,10 @@
 import React, { useContext, createContext } from "react";
-import { motion } from "motion/react";
+import { motion, HTMLMotionProps } from "motion/react";
 
 const FadeInStaggerContext = createContext(false);
 const viewport = { once: true, margin: "0px 0px -200px" };
 
-function FadeIn(props: any) {
+function FadeIn(props: HTMLMotionProps<"div">) {
   const isInstaggerGroup = useContext(FadeInStaggerContext);
 
   return (

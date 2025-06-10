@@ -96,7 +96,7 @@ function Header() {
         <div className="relative h-full flex flex-col pt-6 px-8">
           <nav className="flex-1">
             <ul className="space-y-6">
-              {headerListItems.map((item, index) => (
+              {headerListItems.map((item) => (
                 <li key={item._id}>
                   <Link
                     href={item.link}
